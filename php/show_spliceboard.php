@@ -9,6 +9,12 @@
 echo '<h2>Welcome to spliceboard-online</h2>';
 // $number = 30;           // 设置最大显示的条目数
 
+// 接收要显示文本的月份
+$selectMonth = $_GET['month'];
+if($selectMonth == null){
+    $selectMonth = 0;       // 默认本月
+}
+
 // 获取当前时间
 date_default_timezone_set('Asia/Shanghai');
 $time_ry = date('Y');
@@ -37,7 +43,8 @@ $time_m = substr($time, 5);
 $time_y = substr($time, 0, 4);
 
 // 获取要查找的文件名
-$id = strval(12*(intval($time_ry) - intval($time_y)) + (intval($time_rm) - intval($time_m)) + 1);
+$old_id = 12*(intval($time_ry) - intval($time_y)) + (intval($time_rm) - intval($time_m)) + 1;
+$id = strval($old_id + intval($selectMonth));
 $filename = '../save/spliceboard' . $id . '.txt';
 // echo '文件名: ' . substr($filename, 8) .'<br />';
 
@@ -57,9 +64,14 @@ if(file_exists($filename)){
 $myfile = fopen($filename, 'r');
 
 // 获取条目信息
-echo '<table border="1"><tr><td>order</td><td>id</td><td>size</td><td>time</td><td>content</td><td>copy</td></tr/>';
 $filesize = filesize($filename);
-$len = 1;       // 先循环一次，然后赋值
+// $len = 1;       // 先循环一次，然后赋值，error
+if($filesize == 0){
+    $len = 0;
+}else{
+    echo '<table border="1"><tr><td>order</td><td>id</td><td>size</td><td>time</td><td>content</td><td>copy</td></tr/>';
+    $len = 1;
+}
 for($i=0; $i < $len; $i ++){                    // 获取$number 个条目信息
     fseek($myfile, $filesize - 11);
     $pkey = fread($myfile, 11);                 // 获取每个条目的关键码
@@ -79,7 +91,7 @@ for($i=0; $i < $len; $i ++){                    // 获取$number 个条目信息
     "<td>{$psize}</td>".
     "<td>{$time}</td>".
     "<td id='{$contentID}'>{$content}</td>".
-    "<td><font color='blue'><label class='clipboard' data-clipboard-action='copy' data-clipboard-target='#{$contentID}'><u>复制</u></label></font></td>".
+    "<td><font color='#0593d3'><label class='clipboard' data-clipboard-action='copy' data-clipboard-target='#{$contentID}'><u>复制</u></label></font></td>".
     "</tr>";
     fseek($myfile, $filesize);                   // 更新 文件指针
     if($i == 0){                                 // 更新 $len
@@ -91,8 +103,33 @@ echo '</table>';
 // 关闭文件
 fclose($myfile);
 
+// 选择显示的内容： 上上月、上一月、这月
+echo '<div id="whichMonth">'. 
+     '<label for="selectMonth"><span>选择月份：</span></label>'.
+     '<select name="selectMonth" id="selectMonth">';
+
+// echo '<option value="-2">上上月</option>'.
+//      '<option value="-1">上一月</option>'.
+//      '<option value="0">这月</option>'; 
+for($i=0; $i < $old_id; $i++){
+    $temp = -1 * $i;    
+    $temp_year = intval($time_y) + intval((intval($time_m) + ($old_id - $i - 1) - 1) / 12);
+    $temp_month = (intval($time_m) + ($old_id - $i - 1) - 1) % 12 + 1;
+    if($temp_month < 10){
+        $temp_month = '0'. $temp_month;
+    }
+    if($temp == intval($selectMonth)){ 
+        echo "<option value='{$temp}' selected>{$temp_year}-{$temp_month}</option>";
+    }else{
+        echo "<option value='{$temp}'>{$temp_year}-{$temp_month}</option>";
+    }
+}
+
+echo '</select>'. 
+     '</div>';
+
 // 引入 html
 echo '<script type="text/javascript" src="../javascript/clipboard.min.js"></script>';
 echo '<script type="text/javascript" src="../javascript/show_spliceboard.js"></script>';
-
+echo '<link rel="stylesheet" type="text/css" href="../css/show_spliceboard.css" />';
 ?>

@@ -12,6 +12,9 @@
     增加编号(5位), 此条目的字节数（包括编号、6位长度）（6位）;
 */
 
+// 连接 css 文件
+echo '<link rel="stylesheet" type="text/css" href="../css/spliceboard_php.css" />';
+
 // 接受表单信息
 $spliceboard = $_POST['spliceboard'];
 if($spliceboard == ''){
@@ -114,4 +117,8 @@ echo 'sucess: 提交成功！' .'<br />';
 
 // 关闭文件
 fclose($myfile);
+
+// 2s 后跳转到 show_spliceboard 页面
+// sleep(2);
+header('location: show_spliceboard.php');
 ?> 

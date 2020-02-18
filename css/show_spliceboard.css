@@ -1,0 +1,24 @@
+body{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: center;
+    background-image: url('/images/body.jpg');
+    background-attachment: fixed;
+}
+
+/* font :hover{     // 没有效果
+    color: #fc6423;
+    cursor: pointer;
+}*/
+
+#whichMonth{
+    text-align: left;
+    width: 200px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 40px;
+    top: 0;
+}
