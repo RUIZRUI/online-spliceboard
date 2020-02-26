@@ -3,7 +3,7 @@ body{
     margin-left: 30px;
     margin-right: 20px;
     text-align: center;
-    background-image: url('/images/body.jpg');
+    background-image: url('/image/body.jpg');
     background-attachment: fixed;
 }
 
