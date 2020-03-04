@@ -11,7 +11,7 @@
     文件存储，30天更新一个文件，然后每增加一个条目，增加到文件尾部；每条条目头部都增加提交时间；每条条目尾部都
     增加编号(5位), 此条目的字节数（包括编号、6位长度）（6位）;
 */
-
+error_reporting(0);
 // 连接 css 文件
 echo '<link rel="stylesheet" type="text/css" href="../css/spliceboard_php.css" />';
 

@@ -5,7 +5,7 @@
     1. strstr($val, 'char'), 返回第一次出现的位置，到结束的字符串
        strpos($val, 'char'), 返回第一次出现的位置
 */
-
+error_reporting(0);
 echo '<h2>Welcome to spliceboard-online</h2>';
 // $number = 30;           // 设置最大显示的条目数
 
@@ -129,7 +129,7 @@ echo '</select>'.
      '</div>';
 
 // 引入 html
-echo '<script type="text/javascript" src="../javascript/clipboard.min.js"></script>';
-echo '<script type="text/javascript" src="../javascript/show_spliceboard.js"></script>';
+echo '<script type="text/javascript" src="../js/clipboard.min.js"></script>';
+echo '<script type="text/javascript" src="../js/show_spliceboard.js"></script>';
 echo '<link rel="stylesheet" type="text/css" href="../css/show_spliceboard.css" />';
 ?>
