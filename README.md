@@ -7,4 +7,5 @@
     ```php
     header('location: show_spliceboard.php');
     ```
+2. php 文件连接 js、css 文件时，与html标签的前后顺序影响不影响渲染
 
