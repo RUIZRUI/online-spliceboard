@@ -1,0 +1,48 @@
+<b>2020-04-01</b> 14:02:49 {Mac d0:81:7a:be:dd:80} 00001000062<b>2020-04-01</b> 14:10:39 {mate9 D0:FF:98:1E:7D:0D	} 00002000065<b>2020-04-01</b> 14:13:25 {honor 18:D2:76:31:78:8B	} 00003000065<b>2020-04-01</b> 14:14:11 {iPhone 6s庆 48:A9:1C:01:A4:22} 00004000071<b>2020-04-01</b> 14:21:54 {TV 7C:B2:32:EB:89:A1	} 00005000062<b>2020-04-01</b> 14:23:19 {think pad C8:3D:D4:F5:E3:9F} 00006000068<b>2020-04-01</b> 14:24:13 {ideated 28:E3:47:69:91:26} 00007000066<b>2020-04-01</b> 14:24:34 {查询mac地址： https://mac.51240.com/28:E3:47:69:91:26__mac/} 00008000105<b>2020-04-01</b> 15:07:21 {powerDesignere 安装教程：https://www.fujieace.com/software/powerdesigner.html} 00009000123<b>2020-04-01</b> 15:25:24 {中文汉化版下载（单文件） https://www.lanzous.com/i7kqb6f} 00010000109<b>2020-04-01</b> 17:18:48 {使用"创建安装介质"方式安装 USB：sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/USB} 00011000191<b>2020-04-01</b> 17:29:18 {dxdiag  win系统诊断} 00012000064<b>2020-04-02</b> 01:57:55 {修改bios: https://zhidao.baidu.com/question/2080457930942722468.html} 00013000111<b>2020-04-02</b> 01:58:34 {查看系统信息: msinfo32} 00014000069<b>2020-04-02</b> 02:50:41 {MGR 转 GPT(GUID): http://www.winwin7.com/JC/Win7JC-772.html} 00015000101<b>2020-04-02</b> 02:58:06 {老毛桃制作PE} 00016000058<b>2020-04-02</b> 02:58:26 {老毛桃制作PE： http://laomaotao.qujingzj.net/lmtpe/uefi.html} 00017000107<b>2020-04-02</b> 11:24:08 {起始扇区号：63； 终止扇区号：240651651；已用空间：47.5G；已用簇数：12453583；空闲簇数：17627865；<br />
+起始簇数：752037；簇数目：62669；已分配：62669；起始扇区：501352；扇区数目：6016359；} 00018000291<b>2020-04-02</b> 17:56:22 {w10 个人版：ed2k://|file|cn_windows_10_consumer_editions_version_1909_updated_jan_2020_x64_dvd_47161f17.iso|5417457664|274FEBA5BF0C874C291674182FA9C851|/} 00019000198<b>2020-04-02</b> 21:06:50 {多人出错时情有可原，单人出错时就是出错} 00020000098<b>2020-04-02</b> 22:42:00 {<del>Advanced SystemCare</del><br />
+<del>apache</del><br />
+CPU-Z<br />
+diskgenius<br />
+<del>docker</del><br />
+Git<br />
+IDM<br />
+<del>JAVA</del><br />
+微信开发者工具<br />
+<del>VS code</del><br />
+<del>mingw64</del><br />
+MKVtoolnix<br />
+<del>mysql</del><br />
+office365<br />
+oracle11g<br />
+<del>php</del><br />
+PLSQL Developer<br />
+powerDesigner<br />
+<del>Python</del><br />
+QQ<br />
+shanaencoder<br />
+sql server<br />
+SSMS17.9<br />
+TransMac<br />
+UltraISO<br />
+ViDown<br />
+vs2019<br />
+winrar<br />
+xixi<br />
+格式工厂<br />
+老毛桃<br />
+视频格式转换<br />
+轻轻一点<br />
+黑科下载器<br />
+黑苹果<br />} 00021000724<b>2020-04-03</b> 00:31:30 {磁盘分配：114.8G、226.4G、124.6G} 00022000080<b>2020-04-03</b> 04:26:07 {2fk040315760897475} 00023000059<b>2020-04-03</b> 04:30:42 {NW8C2CR7GEACF992A} 00024000058<b>2020-04-03</b> 16:01:05 {ideated     28:E3:47:69:91:26	192.168.1.106} 00025000084<b>2020-04-03</b> 18:24:21 {负面情绪：大不了} 00026000065<b>2020-04-03</b> 19:26:42 {TV 7C:B2:32:EB:89:A1	192.168.1.105} 00027000075<b>2020-04-03</b> 22:40:55 {https://mp.weixin.qq.com/s/eYVIJCRqOOtnkId2ylgxjA} 00028000090<b>2020-04-04</b> 01:49:02 {汉化博客：http://www.th-sjy.com/} 00029000078<b>2020-04-04</b> 23:10:04 {复制这段内容后打开百度网盘手机App，操作更方便哦 链接:https://pan.baidu.com/s/1wRZ9pIAgE3y5aQl3gW8uEw 提取码:s9g5@猫猫爱吃糖(*^__^*) @小李纸 @提桶跑路} 00030000235<b>2020-04-06</b> 00:47:29 {Axure RP8 汉化教程：https://www.pmyes.com/thread-35164.htm} 00031000104<b>2020-04-07</b> 03:12:04 {更改启动顺序：https://jingyan.baidu.com/article/f71d60379e16021ab641d1ab.html} 00032000125<b>2020-04-07</b> 03:12:47 {copy 页面也可以不点击，比如tab选择，清除默认内容} 00033000109<b>2020-04-07</b> 03:29:26 {curl用法：https://www.cnblogs.com/coderland/p/5883763.html} 00034000102<b>2020-04-07</b> 03:29:57 {ubuntu安装 on-my-zsh：https://www.cnblogs.com/EasonJim/p/7863099.html} 00035000113<b>2020-04-07</b> 04:08:17 {github连接超时：https://www.cnblogs.com/wanghao-boke/p/12596549.html} 00036000114<b>2020-04-07</b> 05:21:24 {kobuichi} 00037000049<b>2020-04-08</b> 23:02:39 {w10美化：https://www.jianshu.com/p/93aaa11f510c} 00038000091<b>2020-04-09</b> 17:16:01 {PearBIOS: https://www.122q.com/html/3459.html} 00039000086<b>2020-04-09</b> 22:16:35 {识别intel处理器：https://www.intel.cn/content/www/cn/zh/support/detect.html} 00040000122<b>2020-04-10</b> 08:10:15 {FakeSMC最新：https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek/downloads/} 00041000118<b>2020-04-10</b> 17:51:08 {https://ke.qq.com/webcourse/index.html?cid=1859856&term_id=101960674&lite=1&from=800021724} 00042000131<b>2020-04-10</b> 18:09:17 {USB网络驱动：http://www.joshuawise.com/horndis#downloading_and_installing_horndis} 00043000127<b>2020-04-10</b> 18:24:23 {https://www.cnblogs.com/yaogengzhu/p/10833285.html} 00044000091<b>2020-04-10</b> 19:26:38 {Mac 安装 oh-my-zsh：https://www.cnblogs.com/EasonJim/p/6283247.html} 00045000111<b>2020-04-10</b> 21:29:26 {黑苹果声卡驱动：https://github.com/acidanthera/AppleALC/blob/master/Resources/} 00046000127<b>2020-04-10</b> 21:37:34 {声卡硬件ID：HDAUDIO\FUNC_01&VEN_10EC&DEV_0233&SUBSYS_17AA3802&REV_1000
+} 00047000118<b>2020-04-10</b> 23:49:37 {黑苹果网卡https://post.smzdm.com/p/a83d937n/} 00048000090<b>2020-04-11</b> 00:08:29 {upload 页面背景有问题} 00049000069<b>2020-04-11</b> 00:47:32 {网卡：我感觉killer的好，我无线有线都是killer的，有线跑满250mbps很轻松} 00050000135<b>2020-04-11</b> 01:00:58 {博通BCM43224HMS 2.4G/5G 300M双频无线网卡 支持WIN10 黑苹果MAC：https://item.jd.com/46850984679.html} 00051000153<b>2020-04-11</b> 01:02:20 {博通网卡：https://item.jd.com/57975383511.html} 00052000092<b>2020-04-11</b> 01:03:23 {博通网卡：https://item.jd.com/60782171809.html} 00053000092<b>2020-04-11</b> 01:42:37 {苹果地带：http://www.catalina.com.cn/info_664.html} 00054000096<b>2020-04-11</b> 01:54:31 {牛逼的黑苹果教程：https://macx.top/1577.html} 00055000094<b>2020-04-11</b> 01:57:28 {瑞昱 RTL8139有线网卡驱动：https://macx.top/5192.html} 00056000102<b>2020-04-11</b> 03:29:33 {黑苹果问题1：SIRI不能听到我说话，是音频不能输入？} 00057000112<b>2020-04-11</b> 04:15:46 {黑苹果显示电量：https://www.cnblogs.com/GengMingYan/p/10197465.html} 00058000116<b>2020-04-11</b> 05:14:30 {MaciASL: https://www.itpwd.com/421.html#} 00059000081<b>2020-04-11</b> 05:43:29 {电源休眠：https://blog.csdn.net/tomggx/article/details/89679362} 00060000109<b>2020-04-11</b> 07:18:29 {主板内存上限：[CMD中] wmic memphysical get maxcapacity} 00061000103<b>2020-04-11</b> 07:37:09 {新购内存条要素：<br />
+1. 海力士<br />
+2. 4G<br />
+3. 1.35V<br />
+4. DDR3L (DDR3低压版)<br />
+5. 频率：鲁大师1600MHz; CPU-Z PC3-12800(800MHz)<br />
+} 00062000215<b>2020-04-11</b> 07:39:30 {新购内存条注意点：https://baijiahao.baidu.com/s?id=1604589904983441716&wfr=spider&for=pc} 00063000138<b>2020-04-11</b> 08:08:26 {笔记本内存扩展：https://zhuanlan.zhihu.com/p/29372564} 00064000102<b>2020-04-11</b> 08:11:17 {新购内存：笔记本内存 4G DDR3L 1600} 00065000085<b>2020-04-11</b> 22:34:24 {upload 模块新问题：手机端华为浏览器不能播放背景音乐，按钮切换也不行} 00066000138<b>2020-04-12</b> 00:15:59 {钛背包：https://sns.io/js/embed.js} 00067000079<b>2020-04-12</b> 01:40:41 {qixzqi 安全问题：<br />
+1. 喜欢明星：Hu Ge<br />
+2. 父母相遇的城市：huai yang<br />
+3. 高中时好朋友的姓氏：zheng<br />} 00068000190<b>2020-04-12</b> 01:47:11 {1. 通过iphon3找回2510591928<br />
+2. 更改2510591928手机号<br />
+3. 找回2826791069问题<br />} 00069000147<b>2020-04-12</b> 02:08:26 {苹果商店隐藏的kanpian软件} 00070000075<b>2020-04-12</b> 09:30:48 {分辨率：1366*768} 00071000061<b>2020-04-13</b> 15:01:26 {心痛，说好的4个插槽呢，裂开了。。。} 00072000093<b>2020-04-16</b> 16:09:33 {《黄金宝藏》蒙古电影 泰平-杭凯，霸王蔡问} 00073000100<b>2020-04-17</b> 19:21:06 {黑苹果升级系统：https://www.jianshu.com/p/c0b02528578b} 00074000103<b>2020-04-17</b> 22:09:25 {没有谁能一直站在自己身边} 00075000077<b>2020-04-17</b> 22:58:55 {macOS Mojave 升级链接：https://apps.apple.com/cn/app/macos-mojave/id1398502828?mt=12} 00076000130<b>2020-04-17</b> 23:02:09 {macOS High Sierra 升级链接：https://apps.apple.com/cn/app/macos-high-sierra/id1246284741?ls=1&mt=12} 00077000145<b>2020-04-18</b> 22:56:54 {wx095eef3fe6796d1a} 00078000059<b>2020-04-18</b> 23:44:17 {qixqi选中颜色：01875F} 00079000067<b>2020-04-23</b> 09:44:46 {eclipse javaee: https://www.eclipse.org/downloads/packages/release/oxygen/3a/} 00080000118<b>2020-04-24</b> 19:58:41 {https://github.com/xiaobinwu/dj} 00081000072<b>2020-04-24</b> 20:00:46 {https://github.com/JoeWrights/wxapp-mi-mall} 00082000084<b>2020-04-24</b> 21:30:34 {微信小程序小米商城详解：https://juejin.im/post/5d142236e51d454d1d628554} 00083000124<b>2020-04-24</b> 21:31:20 {微信小程序小米商城源码：https://github.com/JoeWrights/wxapp-mi-mall} 00084000120<b>2020-04-26</b> 12:29:17 {完了，梦见IG输了，上次还是S9半决赛。。。} 00085000099<b>2020-04-26</b> 20:38:21 {两不相欠，恩断义绝，阴阳人，真就湖北人这么恶心} 00086000110<b>2020-04-27</b> 10:30:21 {不能再跟着你们走了，不怕，苍天绕过谁，该来的终究要来} 00087000119<b>2020-04-27</b> 17:12:51 {我的PS搭档} 00088000055<b>2020-04-28</b> 13:51:28 {markdown pad注册码：https://blog.csdn.net/qq_43827595/article/details/96699987} 00089000123<b>2020-04-28</b> 20:37:08 {链接: https://pan.baidu.com/s/18lt2TUwYbrXC9Vg4ov8mCg 提取码: mprs} 00090000112<b>2020-04-28</b> 20:42:39 {链接: https://pan.baidu.com/s/19-Lk3lntmRChEwezfwvdcg 提取码: z5hf} 00091000112<b>2020-04-28</b> 20:44:04 {链接: https://pan.baidu.com/s/1_-bwAJ3zp-KiC4TxUUiKyw 提取码: 3ht7 复制这段内容后打开百度网盘手机App，操作更方便哦} 00092000182<b>2020-04-28</b> 20:45:30 {链接: https://pan.baidu.com/s/1iDrvhZZojv5WZsQnysULKQ 提取码: k5bv 复制这段内容后打开百度网盘手机App，操作更方便哦} 00093000182<b>2020-04-28</b> 20:50:46 {链接: https://pan.baidu.com/s/1jfAtjMfutg9NjZclHhZr9w 提取码: r3ia 复制这段内容后打开百度网盘手机App，操作更方便哦} 00094000182<b>2020-04-28</b> 20:56:59 {链接: https://pan.baidu.com/s/1jL7shH5joZxqYxaiE5uhKA 提取码: aujw 复制这段内容后打开百度网盘手机App，操作更方便哦} 00095000182

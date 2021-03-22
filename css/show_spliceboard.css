@@ -5,6 +5,8 @@ body{
     text-align: center;
     background-image: url('/image/body.jpg');
     background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /* font :hover{     // 没有效果
