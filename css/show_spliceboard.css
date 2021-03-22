@@ -24,3 +24,20 @@ body{
     margin-top: 40px;
     top: 0;
 }
+
+
+/*
+    除去第一行，更改其他表格的样式
+*/
+table tr:not(:first-child){
+    white-space: pre-wrap;
+}
+
+/* table .content{
+    max-width: 80%;
+    overflow-x: auto;
+}*/
+
+table .td_copy{
+    text-align: center;
+}

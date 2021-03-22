@@ -91,8 +91,8 @@ for($i=0; $i < $len; $i ++){                    // 获取$number 个条目信息
     "<td>{$pid}</td> ".
     "<td>{$psize}</td>".
     "<td>{$time}</td>".
-    "<td id='{$contentID}'>{$content}</td>".
-    "<td><font color='#0593d3'><label class='clipboard' data-clipboard-action='copy' data-clipboard-target='#{$contentID}'><u>复制</u></label></font></td>".
+    "<td class='td_copy'><font color='#0593d3'><label class='clipboard' data-clipboard-action='copy' data-clipboard-target='#{$contentID}'><u>复制</u></label></font></td>".
+    "<td id='{$contentID}'><div class='content'>{$content}</div></td>".
     "</tr>";
     fseek($myfile, $filesize);                   // 更新 文件指针
     if($i == 0){                                 // 更新 $len
