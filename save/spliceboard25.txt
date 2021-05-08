@@ -18,4 +18,20 @@
 - 前端：机器学习已经能够直接从设计生成代码了，其次，现在不少设计软件也可以直接生成CSS code，组件化横行的前端领域人数是在不断收缩的，前端需求高涨，但是只招能做架构和技术设计的人。
 - 后端：甚至比前端更加危险，前端由于框架迭代还需要不断招人更新框架；后端Java C++就真的是万年不变；serverless框架现在开始大规模进生产力，未来的后端本质就是胶水代码，又需要什么“顶级人才”发高工资写script 呢？
 
-总结下来：行业ML有需求、ML 是未来、技术门槛降低需求人才日益高端，不管前端后台ML，都要往难被取代的方向走才能站稳脚跟。} 00052001978<b>2021-03-22</b> 22:08:32 {https://www.zhihu.com/question/397813384} 00053000081
+总结下来：行业ML有需求、ML 是未来、技术门槛降低需求人才日益高端，不管前端后台ML，都要往难被取代的方向走才能站稳脚跟。} 00052001978<b>2021-03-22</b> 22:08:32 {https://www.zhihu.com/question/397813384} 00053000081<b>2021-03-23</b> 01:11:18 {https://www.zyskys.com/posts/60593.html} 00054000080<b>2021-03-23</b> 10:15:01 {https://sctrack.sendcloud.net/track/click/eyJuZXRlYXNlIjogImZhbHNlIiwgIm1haWxsaXN0X2lkIjogMCwgInRhc2tfaWQiOiAiIiwgImVtYWlsX2lkIjogIjE2MTY0NjU2NDc4MDNfNDQxNjNfNDg3NTBfNzE4LnNjLTEwXzlfNl8xODEtaW5ib3VuZDAkemhlbmd4aWFuZ0BxaXhxaS5jbiIsICJzaWduIjogImI3N2E4ZTE2NzExNDkxYzg2YmRhZGJhMGFkZTU2ZGY1IiwgInVzZXJfaGVhZGVycyI6IHt9LCAibGFiZWwiOiAwLCAidHJhY2tfZG9tYWluIjogInNjdHJhY2suc2VuZGNsb3VkLm5ldCIsICJyZWFsX3R5cGUiOiAiIiwgImxpbmsiOiAiaHR0cCUzQS8vZGV2LmRjbG91ZC5uZXQuY24vdmVyaWZpY2F0aW9uLzQyZDBiODAyYWRlODM4NTBiOTk2MmZlOTQyM2ZmMTYyZjNjNDQ2YzUwYmMxMzEwZDlhNTJiNGYxNWM5NWZjMTAlM0ZlbWFpbCUzRHpoZW5neGlhbmclMjU0MHFpeHFpLmNuJTI2ZnJvbSUzRGRldiIsICJvdXRfaXAiOiAiMTA2Ljc1LjEwLjExNyIsICJjb250ZW50X3R5cGUiOiAiMiIsICJ1c2VyX2lkIjogNDQxNjMsICJvdmVyc2VhcyI6ICJmYWxzZSIsICJjYXRlZ29yeV9pZCI6IDkwMzU4fQ==.html} 00055000820<b>2021-03-23</b> 10:15:36 {TOKYO GIRL} 00056000051<b>2021-03-23</b> 11:04:59 {http://61.163.192.253:8005/cn_hngwyzk/index.html#/index} 00057000096<b>2021-03-23</b> 15:14:53 {Stand by me in the video - ひまわりの約束} 00058000089<b>2021-03-24</b> 00:23:44 {ipconfig/flushdns} 00059000058<b>2021-03-25</b> 14:53:05 {https://www.wondercv.com/cvs/zj0yyQkk/editor} 00060000085<b>2021-03-25</b> 20:46:42 {1. 了解 MVVM模式，vue框架;
+2. 了解前端常用的构建工具，grunt.、Gulp、webpack至少-一项;
+3. 熟悉Linux系统基本命令和操作;
+4. Java 负责爬虫定制需求的调研及开发;
+5. 对Boost、多线程有开发经验优先;
+6. 熟悉 Redis;} 00061000314<b>2021-03-26</b> 11:11:28 {https://rfw.jnsii.com/wallpaper/} 00062000073<b>2021-03-26</b> 14:47:29 {https://hub.fastgit.org} 00063000064<b>2021-03-28</b> 13:59:46 {https://ruodanglaishi.xyz/} 00064000067<b>2021-03-28</b> 14:10:02 {If you're depressed, you're living in the past. If you're anxious, you're living in the future. If you're at peace, you're living in the present.} 00065000186<b>2021-03-29</b> 20:17:11 {<html>
+<body>
+<form
+action="http://www.exponentcms.org/index.php?module=eventregistration&action=emailRegistrants&email_addresses=123456789@123.com&email_message=1&email_subject=1" method="post"
+enctype="multipart/form-data">
+<label for="file">Filename:</label>
+<input type="file" name="attach" id="file" />
+<br />
+<input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+</html>} 00066000443<b>2021-03-30</b> 17:30:44 {网盘网站：https://pan.uvooc.com/} 00067000078<b>2021-03-30</b> 20:13:30 {http://www.xitongcheng.com/jiaocheng/win10_article_19129.html} 00068000102<b>2021-03-31</b> 19:28:31 {快要22岁了，却感觉人生平平无奇，按照记忆密度来说，自己记忆最深的20年已然逝去，各种滋味，但是按照生命的长度来说，还有几个二十年呢？面对梦幻般的钢琴，彷佛不知道要做什么，看看双手，怀疑此生是否能够弹奏一曲，总在感伤过去未学，今后呢？} 00069000384

@@ -1,0 +1,4 @@
+<b>2021-05-02</b> 11:36:41 {java -jar config-server.jar --spring.cloud.config.server.git.username=xxx --spring.cloud.config.server.git.password=xxx} 00001000160<b>2021-05-03</b> 09:26:05 {又梦见毕设了} 00002000059<b>2021-05-03</b> 09:26:25 {醒来又忘了} 00003000056<b>2021-05-03</b> 16:01:06 {真他娘的狗啊，依赖怎么回事，心好累} 00004000092<b>2021-05-03</b> 22:57:27 {兄弟，顶不住了，回退回退，来日再战！} 00005000095<b>2021-05-05</b> 09:41:36 {http://blog.itpub.net/69959503/viewspace-2722465/} 00006000090<b>2021-05-06</b> 15:28:54 {docker run -itd --name redis -p 6379:6379 redis} 00007000088<b>2021-05-07</b> 00:46:42 {bin/zookeeper-server-start.sh -daemon config/zookeeper.properties} 00008000106<b>2021-05-07</b> 00:48:41 {bin/kafka-server-start.sh -daemon config/server.properties} 00009000099<b>2021-05-07</b> 09:49:37 {// Get all hashes in USER hashmap
+hashOperations.entries("USER");} 00010000107<b>2021-05-07</b> 09:50:59 {public Map<String, User> getAll(){
+		return hashOperations.entries("USER");
+	}} 00011000121

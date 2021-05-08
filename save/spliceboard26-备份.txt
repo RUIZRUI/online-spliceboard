@@ -1,0 +1,434 @@
+<b>2021-04-01</b> 22:56:31 {心痛，大家都开始找伴了，一个人挺好，简简单单，轻轻松松，除了有时候兽性大发，孤身一人，叩问内心；
+IG今天输了，好久好久，他们都没有赢过一场BO5了，为他们心痛，这样也好，退圈，也没有什么值得留念的了，这一路的陪伴，有意气风发，也有颓靡，有滋有味，不过，IG变了，我也变了，大家都变了，爱恨已逝，一段经历，一段狂热，陪伴自己无所适从、寂寥的时光，从中汲取力量和黑暗，但是，人终究会长大，不是吗？可能疼痛会成长的更快，可自己也不能一直把自己的情绪与动力放在别人身上，情绪动力都应该产于自身。别了，shy哥、宁王、义进哥、jackeylove、宝蓝，还有duke，你们是最好的几个人，因为种种，不得不分开，那段日子你们应该都很怀念把！真的是时候说再见了，还望以后你们更顺利啊，能赢BO5啊，以后的人生之路也很顺啊！！！} 00001001057<b>2021-04-02</b> 13:20:33 {既然迟早要分别，那就祝大家前途似锦啊！} 00002000098<b>2021-04-03</b> 13:38:25 {123} 00003000044<b>2021-04-05</b> 01:31:17 {kdevtmpfsi} 00004000051<b>2021-04-08</b> 15:35:22 {alert('1');} 00005000052<b>2021-04-08</b> 15:36:23 {<script>alert(1)</script>} 00006000066<b>2021-04-09</b> 01:15:52 {斗罗大陆115} 00007000056<b>2021-04-09</b> 10:05:24 {Aa15632897935} 00008000054<b>2021-04-09</b> 10:14:48 {https://www.cnblogs.com/stulzq/p/9286878.html} 00009000086<b>2021-04-09</b> 12:49:48 {ok,已经解决，全部换了最新版本，然后换了一个虚拟机。编译成功了了
+具体
+Ubuntu 18.04
+libfastcommon-1.0.43.tar.gz
+fastdfs-6.06.tar.gz
+nginx-1.16.1.tar.gz
+fastdfs-nginx-module-1.22.tar.gz} 00010000261<b>2021-04-09</b> 15:01:54 {mvn install:install-file -DgroupId=org.csource -DartifactId=fastdfs-client-java -Dversion=1.28 -Dpackaging=jar -Dfile=target\fastdfs-client-java-1.28-SNAPSHOT.jar} 00011000203<b>2021-04-10</b> 13:55:48 {http://ali.qixqi.cn:8888/group1/M00/00/00/1EBEO2BxPcOAasQVAAB5ViK6ma4554.jpg} 00012000117<b>2021-04-11</b> 23:41:20 {<img src="https://image/body.jpg" />} 00013000077<b>2021-04-11</b> 23:41:56 {<img src="https://qixqi.cn/image/body.jpg" />} 00014000086<b>2021-04-11</b> 23:43:21 {152 人赞同了该回答
+哈哈，大家打了好多有意思的比方，不过好像没有看到用实际案例进行解释的，我补充一个吧~
+
+不得不说，分布式和集群都是为了解决两个问题：
+
+高吞吐量（throughput）
+高可用（availability）
+那既然他们俩都能解决这两个问题，那择其一为我所用就好啦，可为什么我们的架构通常既是分布式，又是集群呢？这不矛盾了吗？
+
+且听老朽慢慢道来。
+
+首先聊聊集群
+
+什么是集群，就是我开饭店，雇了好多个水平一模一样的厨师，既可以同时帮我做菜（高吞吐量），而且万一有一个厨师回家娶媳妇了，我饭店里还有别的厨师（他们可能会比平时忙），不至于要关门停业（高可用）
+
+我们常用的缓存服务器，比如Memcached和Redis，都是集群架构，以Memcached为例，一开始我们只有一个Memcached节点：
+<img src="https://pic4.zhimg.com/80/v2-ac32500d1590efc2da7dea2b01ed14bd_720w.jpg?source=1940ef5c" />
+
+
+
+
+Client把一些数据放到Memcached中，省的每次都是数据库查，如果只有一个Memcached，那一旦请求压力大了，Memcached很快就忙不过来（虽然Memcached是多线程），而且一旦Memcached挂了，那就没有缓存可以用了，全部请求都会走数据库，数据库的压力会骤然增加！
+
+所以我们加多了两个Memcached节点，形成Memcached集群：
+<img src="https://pic3.zhimg.com/80/v2-076bfaa5bc57528d0abe027d47aa8c75_720w.jpg?source=1940ef5c" />
+
+
+Memcached集群实现了开头提到的两个特性：
+
+高吞吐量：通过负载均衡算法（通常是借助一致性Hash和虚拟节点），我们把Client的请求均匀分配到三台Memcached服务器上，不至于只让一台Memcached疲于处理全部请求。
+高可用：一旦一台Memcached节点挂了，比如说Memcached1，那借助一致性Hash算法和它的虚拟节点机制，我们可以将原本发给Client的Memcached1的请求均匀分配到Memcached2和3上，缓存功能依旧可用。
+有人说，请求会被分布到各个Memcached节点，这不就是分布式吗？
+
+严格来说，这只能算是“分布的”（distributed），正如Memcached官网的介绍说的：
+
+memcached is a high-performance, distributed memory object caching system
+那什么才算是分布式呢？（承上启下，自然而然的引出下面对分布式的介绍，加5分 —— 语文老师评）
+
+还是我开饭店的例子，饭店不能只有厨师啊，总不能让客人来了直接跑到后厨跟厨师说他要吃什么吧？所以还要前台负责接待，要服务员负责送菜，还要收银员负责结账...... 这样一个各司其职，最后共同完成一件大事的系统，就形成了分布式。
+
+还是上面那张图，换个角度去看，就是分布式了，之前我们只看到了三台Memcached节点，上面说了，这只是集群，那要怎么看才是分布式呢？把眼睛睁大！看整张图！
+<img src="https://pic1.zhimg.com/80/v2-04c96b5b3ef15f93808ee76c8ec46bd4_720w.jpg?source=1940ef5c" />
+
+
+为什么说整张图就是分布式了？因为这些节点各司其职，有专门负责数据持久化存储的（Database），有对外提供业务访问的（Client，姑且认为是一个商品查询服务吧），也有负责数据缓存的（Memcached）
+
+什么？你说这样还不够分布式？那就这样吧（画的有点ugly...）：
+<img src="https://pic4.zhimg.com/80/v2-2f2d79cd853b0ee316ebffe3c4ae2ee5_720w.jpg?source=1940ef5c" />
+
+够分布式了吧 (￣▽￣)~*
+
+分布式同样实现了开头提到的两个特性：
+
+高吞吐量：我们把不同业务拆分到不同的机器上，比如用户信息查询和订单信息查询都是非常频繁的业务操作，现在我们拆成了UserService和OrderService，放在不同的机子上运行，自然比都放在一台机器上，吞吐量要高得多。
+高可用：我改了一行UserService的代码，部署过去，编译失败，节点挂掉了，最多就影响需要依赖UserService的业务，不会影响其他的，整个系统整体上还是可用的，而如果所有业务都放在一起，那就危险多了！一行代码编译失败，整个系统垮掉，整段垮掉！
+可能有同学觉得这样的分布式，和之前提到的Memcached将请求分散给各个节点进行处理，不都一样吗？Memcached集群也是每个节点各司其职，每个节点负责一小部分请求，共同实现缓存这个功能，这不也是分布式吗？
+
+再啰嗦一句你们就清楚了。
+
+我们常说的分布式，或者说分布式（Distribution）这个术语，指的是各个异构的节点形成的系统，所谓异构，就是结构不同、功能不同的节点。
+
+而Memcached集群的各个节点呢？他们是同构的，一个缓存的请求过来，比如说Set xxKey xxValue，那这个请求最终只会被一个Memcached节点处理，不会需要多个节点来共同完成这个请求。
+
+而分布式呢，假设我有一个下单的请求，请求发给了OrderService，OrderService需要根据请求里头的userId补充用户信息，那就需要调用UserService提供的接口，然后我还要查询这比订单里头的商品信息，所以又得去调用GoodService接口，最后，才能完成下单这个操作。
+
+OrderService、UserService和GoodService共同完成了下单这件事，这才是分布式（Distribution），而Memcached集群最多只能算是“分布的”（Distributed）。
+
+以上，希望对你有所帮助。} 00015005695<b>2021-04-12</b> 19:44:15 {# import torch
+# import numpy as np
+# poses_2d = np.array([[483.0,450],[503, 450],[503, 539],[496, 622],[469, 546], [462, 546.],[469, 622],[483, 347],
+#                      [483, 326],[489, 264],[448, 347],[448, 408],[441, 463],[517, 347],[524, 408],[538, 463]])
+# model = torch.load("checkpoint/pretrained/ckpt_semgcn_nonlocal_sh.pth.tar", map_location='cpu')
+# poses_3d = model(poses_2d)
+# print(poses_3d)
+
+from __future__ import print_function, absolute_import, division
+
+import numpy as np
+import os.path as path
+
+import torch
+import torch.backends.cudnn as cudnn
+from torch.utils.data import DataLoader
+from common.data_utils import read_3d_data, create_2d_data
+from common.camera import camera_to_world, image_coordinates
+from common.camera import world_to_camera, normalize_screen_coordinates
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib
+matplotlib.use('TkAgg')
+
+def main():
+    dataset_path = "./data/data_3d_h36m.npz"    # 加载数据
+    from common.h36m_dataset import Human36mDataset
+    dataset = Human36mDataset(dataset_path)
+    dataset = read_3d_data(dataset)
+    cudnn.benchmark = True
+    device = torch.device("cpu")
+    from models.sem_gcn import SemGCN
+    from common.graph_utils import adj_mx_from_skeleton
+    p_dropout = None
+    adj = adj_mx_from_skeleton(dataset.skeleton())
+    model_pos = SemGCN(adj, 128, num_layers=4, p_dropout=p_dropout,
+                       nodes_group=dataset.skeleton().joints_group()).to(device)
+    ckpt_path = "./checkpoint/pretrained/ckpt_semgcn_nonlocal_sh.pth.tar"
+    ckpt = torch.load(ckpt_path, map_location='cpu')
+    model_pos.load_state_dict(ckpt['state_dict'], False)
+    model_pos.eval()
+    # ============ 新增代码 ==============
+    # 从项目处理2d数据的代码中输出的一个人体数据
+    inputs_2d = [[483.0, 450], [503, 450], [503, 539], [496, 622], [469, 450], [462, 546], [469, 622], [483, 347],
+                   [483, 326], [489, 264], [448, 347], [448, 408], [441, 463], [517, 347], [524, 408], [538, 463]]
+
+    # # openpose的测试样例识别结果
+    # inputs_2d = [[86.0, 137], [99, 128], [94, 127], [97, 110], [89, 105], [102, 129], [116, 116], [99, 110],
+    #              [105, 93], [117, 69], [147, 63], [104, 93], [89, 69], [82, 38], [89, 139], [94, 140]]
+    # inputs_2d = [[243.00, 320.88],
+    #             [283.00, 375.00],
+    #             [281.00, 521.00],
+    #             [279.00, 651.00],
+    #             [203.00, 374.00],
+    #             [181.00, 529.00],
+    #             [176.00, 651.00],
+    #             [243.00, 213.62],
+    #             [243.00, 160.00],
+    #             [249.50, 62.50],
+    #             [180.00, 157.00],
+    #             [153.00, 265.00],
+    #             [150.00, 368.00],
+    #             [308.00, 165.00],
+    #             [327.00, 269.00],
+    #             [337.00, 361.00]]
+
+    inputs_2d = np.array(inputs_2d)
+    # inputs_2d[:, 1] = np.max(inputs_2d[:, 1]) - inputs_2d[:, 1]   # 变成正的人体姿态，原始数据为倒立的
+
+    cam = dataset.cameras()['S1'][0]    # 获取相机参数
+    inputs_2d[..., :2] = normalize_screen_coordinates(inputs_2d[..., :2], w=cam['res_w'], h=cam['res_h'])  # 2d坐标处理
+    inputs_2d = np.array([[1.1879e-02, -1.8588e-01],
+                               [-4.0413e-02, -1.7611e-01],
+                               [3.2108e-02, 1.0848e-04],
+                               [6.4772e-02, 1.4559e-01],
+                               [6.3162e-02, -1.9542e-01],
+                               [2.6636e-02, -1.4918e-02],
+                               [-8.0327e-03, 1.4369e-01],
+                               [1.3496e-03, -2.8103e-01],
+                               [1.6839e-02, -3.8858e-01],
+                               [1.0669e-02, -4.5532e-01],
+                               [6.0861e-02, -3.5984e-01],
+                               [9.4432e-02, -2.5283e-01],
+                               [6.0862e-02, -3.5163e-01],
+                               [-3.7896e-02, -3.7581e-01],
+                               [-1.2927e-01, -3.0280e-01],
+                               [-8.0597e-02, -2.0949e-01]])
+    # 画出归一化屏幕坐标并且标记序号的二维关键点图像
+    print(inputs_2d)    # 打印归一化后2d关键点坐标
+    d_x = inputs_2d[:, 0]
+    d_y = inputs_2d[:, 1]
+    plt.figure()
+    plt.scatter(d_x, d_y)
+    for i, txt in enumerate(np.arange(inputs_2d.shape[0])):
+        plt.annotate(txt, (d_x[i], d_y[i]))     # 标号
+    # plt.show()      # 显示2d关键点归一化后的图像
+    d_x = inputs_2d[:, 0]
+    d_y = inputs_2d[:, 1]
+    temp = d_x
+    x = [temp[9], temp[8], temp[10], temp[11], temp[12]]
+    temp = d_y
+    y = [temp[9], temp[8], temp[10], temp[11], temp[12]]
+    plt.plot(x, y)
+    temp = d_x
+    x = [temp[8], temp[7], temp[0], temp[4], temp[5], temp[6]]
+    temp = d_y
+    y = [temp[8], temp[7], temp[0], temp[4], temp[5], temp[6]]
+    plt.plot(x, y)
+    temp = d_x
+    x = [temp[0], temp[1], temp[2], temp[3]]
+    temp = d_y
+    y = [temp[0], temp[1], temp[2], temp[3]]
+    plt.plot(x, y)
+    temp = d_x
+    x = [temp[8], temp[13], temp[14], temp[15]]
+    temp = d_y
+    y = [temp[8], temp[13], temp[14], temp[15]]
+    plt.plot(x, y)
+
+    # 获取3d结果
+    inputs_2d = torch.tensor(inputs_2d, dtype=torch.float32)    # 转换为张量
+    outputs_3d = model_pos(inputs_2d).cpu()         # 加载模型
+    outputs_3d[:, :, :] -= outputs_3d[:, :1, :]     # Remove global offset / 移除全球偏移
+    predictions = [outputs_3d.detach().numpy()]     # 预测结果
+    prediction = np.concatenate(predictions)[0]     # 累加取第一个
+    # Invert camera transformation  / 反相机的转换
+    prediction = camera_to_world(prediction, R=cam['orientation'], t=0)     # R和t的参数设置影响不大，有多种写法和选取的相机参数有关，有些S没有t等等问题
+    prediction[:, 2] -= np.min(prediction[:, 2])    # 向上偏移min(prediction[:, 2]),作用是把坐标变为正数
+    print('prediction')
+    print(prediction)   # 打印画图的3d坐标
+    plt.figure()
+    ax = plt.subplot(111, projection='3d')  # 创建一个三维的绘图工程
+    o_x = prediction[:, 0]
+    o_y = prediction[:, 1]
+    o_z = prediction[:, 2]
+    print(o_x)
+    print(o_y)
+    print(o_z)
+    ax.scatter(o_x, o_y, o_z)
+
+    temp = o_x
+    x = [temp[9], temp[8], temp[10], temp[11], temp[12]]
+    temp = o_y
+    y = [temp[9], temp[8], temp[10], temp[11], temp[12]]
+    temp = o_z
+    z = [temp[9], temp[8], temp[10], temp[11], temp[12]]
+    ax.plot(x, y, z)
+
+    temp = o_x
+    x = [temp[8], temp[7], temp[0], temp[4], temp[5], temp[6]]
+    temp = o_y
+    y = [temp[8], temp[7], temp[0], temp[4], temp[5], temp[6]]
+    temp = o_z
+    z = [temp[8], temp[7], temp[0], temp[4], temp[5], temp[6]]
+    ax.plot(x, y, z)
+
+    temp = o_x
+    x = [temp[0], temp[1], temp[2], temp[3]]
+    temp = o_y
+    y = [temp[0], temp[1], temp[2], temp[3]]
+    temp = o_z
+    z = [temp[0], temp[1], temp[2], temp[3]]
+    ax.plot(x, y, z)
+
+    temp = o_x
+    x = [temp[8], temp[13], temp[14], temp[15]]
+    temp = o_y
+    y = [temp[8], temp[13], temp[14], temp[15]]
+    temp = o_z
+    z = [temp[8], temp[13], temp[14], temp[15]]
+    ax.plot(x, y, z)
+
+    # temp = o_x
+    # x = [temp[0], temp[14]]
+    # temp = o_y
+    # y = [temp[0], temp[14]]
+    # temp = o_z
+    # z = [temp[0], temp[14]]
+    # ax.plot(y, x, z)
+    #
+    # temp = o_x
+    # x = [temp[0], temp[15]]
+    # temp = o_y
+    # y = [temp[0], temp[15]]
+    # temp = o_z
+    # z = [temp[0], temp[15]]
+    # ax.plot(y, x, z)
+
+    # 改变坐标比例的代码，该代码的效果是z坐标轴是其他坐标的两倍
+    ax.get_proj = lambda: np.dot(Axes3D.get_proj(ax), np.diag([0.5, 0.5, 1, 1]))
+
+    plt.show()
+
+
+if __name__ == '__main__':
+    main()} 00016008049<b>2021-04-13</b> 10:51:18 {https://shiyangyu.com/uefi-refind-boot/} 00017000080<b>2021-04-13</b> 11:28:46 {https://shiyangyu.com/uefi-refind-boot/} 00018000080<b>2021-04-15</b> 19:46:47 {机器学习，深度学习，忘掉再来} 00019000083<b>2021-04-17</b> 22:36:59 {https://www.cnblogs.com/qinguoyi/p/12355516.html} 00020000089<b>2021-04-19</b> 23:02:17 {docker pull mysql:8.0.23} 00021000065<b>2021-04-19</b> 23:32:18 { docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1214 --restart=always -v /pan/mysql/conf.d:/etc/mysql/conf.d -v /pan/mysql/my.cnf:/etc/mysql/my.cnf -v /pan/mysql/data:/var/lib/mysql -d mysql:latest} 00022000252<b>2021-04-19</b> 23:54:38 { docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1214 --restart=always -v /pan/mysql/conf.d:/etc/mysql/conf.d -v /pan/mysql/my.cnf:/etc/mysql/my.cnf -v /pan/mysql/data:/var/lib/mysql -v /pan/mysql/mysql-files:/var/lib/mysql-files/ -d mysql:latest} 00023000300<b>2021-04-20</b> 00:22:16 { mysql -h 127.0.0.1 -P 3306 -uroot -p} 00024000078<b>2021-04-20</b> 11:43:13 {564
+} 00025000046<b>2021-04-22</b> 15:27:48 {https://www.jianshu.com/p/bdbc00e647db} 00026000079<b>2021-04-23</b> 22:36:21 {<iframe width="950" height="534" src="https://www.youtube.com/embed/YgxHnxh4Lyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>} 00027000289<b>2021-04-24</b> 10:39:40 {package com.vector;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList arrayList =new ArrayList();
+        Scanner sc = new Scanner(System.in);
+        Byte countOne = sc.nextByte();
+        byte flag=1;//标记组数
+        for(Byte i=0;i<countOne;i++){//组数
+            int N = sc.nextInt();
+            for(int ct=0;ct<N;ct++){//每组数据输入
+                arrayList.add(sc.nextInt());
+            }
+            int maxSum=0;
+            int thisSum=0;
+            int temp=0,start=0,end=0;//始末位置标记
+            for(int j = 0;j<arrayList.size()-1;j++){
+                thisSum += (Integer)arrayList.get(j);//遍历最大子序列
+                if(thisSum >= maxSum){
+                    maxSum = thisSum;
+                    if(start==0){//始位置标记
+                        start=j+1;
+                    }temp++;//始末差位记录
+                }else if(thisSum<0){
+                    thisSum = 0;
+                }
+            }
+            end = temp + start;//末位记录
+            System.out.println("Case "+flag+":");
+            System.out.print(maxSum+" "+start+" "+end);
+            if(flag<countOne)
+                System.out.println();
+            flag++;
+            arrayList.clear();
+        }
+    }
+}
+} 00028001427<b>2021-04-24</b> 21:28:24 {<!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
+<dependency>
+    <groupId>javax.websocket</groupId>
+    <artifactId>javax.websocket-api</artifactId>
+    <version>1.1</version>
+    <scope>provided</scope>
+</dependency>
+} 00029000298<b>2021-04-24</b> 23:39:17 {1: wujie.qixqi.cn
+2. qixqi.cn
+3. baidu.qixqi.cn
+4. shimengya.qixqi.cn
+5. ali.qixqi.cn
+6. ping.qixqi.cn
+7. ali2.qixqi.cn} 00030000166<b>2021-04-24</b> 23:43:52 { Version:           20.10.6
+ API version:       1.41} 00031000094<b>2021-04-25</b> 13:08:40 {1: wujie.qixqi.cn
+2. qixqi.cn
+3. baidu.qixqi.cn
+4. shimengya.qixqi.cn
+5. ali.qixqi.cn
+6. ping.qixqi.cn        Aa15632897935
+7. ali3.qixqi.cn        (wujie)
+8. ali4.qixqi.cn        ycx} 00032000231<b>2021-04-25</b> 18:38:32 {丑数
+BFC
+盒子模型
+实现水平布局有啥方法
+知道哪些head标签里边的标签
+title link script meta 
+问：script一般都放在body里面，为什么
+闭包，手写一个闭包
+实现一个倒计时
+setInterval（）
+那你都熟悉什么
+前端怎么学
+前端项目都有啥
+平时闲下来干点啥
+
+你最近学的比较难的
+
+let x=x
+var x=x} 00033000424<b>2021-04-26</b> 16:38:30 {git config --global http.sslVerify "false"} 00034000083<b>2021-04-26</b> 16:55:22 {github 提交失败：https://www.cnblogs.com/xym4869/p/13284364.html} 00035000110<b>2021-04-26</b> 20:15:19 {https://shiyangyu.com/uefi-refind-boot/} 00036000080<b>2021-04-26</b> 20:26:48 {cd /boot/EFI/refind/
+mkdir -p themes
+git clone https://github.com/EvanPurkhiser/rEFInd-minimal themes/rEFInd-minimal
+echo "include themes/refind-minimal/theme.conf" >> refind.conf
+systemctl reboot} 00037000241<b>2021-04-27</b> 12:23:36 {$$$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} 00038000084<b>2021-04-27</b> 17:25:29 {测试将 nginx, php-fpm 统一到用户 qixqi:qixqi} 00039000093<b>2021-04-27</b> 19:49:48 {✕
+ TRAVELWITHABUTTERFLY.COM › Annotations
+In New York, Concrete Jungle Where Dreams Are Made Of
+RYAN LEE APRIL 28, 2018
+Top of the Standard
+Yo yo yo! New York is the place to be!
+
+After my recent trip to New York City, I’ve decided that, excluding Hong Kong, New York is the place I would most want to live in… at least for a year. It’s got everything I want – fantastic restaurants, astounding number of things to do, a diverse array of people, everywhere is walkable and through public transportation, and I adore a competitive and driven city – laid back cities are not for me at the moment.
+
+I’ve been to New York many times, each time trying to accomplish something touristy and never really experiencing ‘living there’. This time, I did feel like as if I was ‘living there’, as if I was a resident in this city. Super fun. Every time I come back, New York grows more and more for me. As I’ve mentioned to other people, NYC is the place to be if you’re 25-30 years old.
+
+Accommodations
+
+Innside by Melia New York NoMad (website)
+
+I’ve heard many times that Manhattan is an expensive city to stay in. But given the price I paid for this hotel, compared to other big cities such as San Francisco and Europe, I found that the ‘value’ I was getting for the hotel rooms was fantastic. This room I stayed in, in Innside, was extremely convenient as it was located in downtown just below Koreatown, on 27th street between 6th and 7th avenue.
+
+I really liked the hotel. The lobby was sleek and sort of trendy and cool, and the rooms were actually quiet. The bathroom lights when turned on were slightly penetrable through the bedroom, which I always see it as not the best design, but the shower and bed was extremely comfortable. The ironing board was a bit ‘short’, but other than that nothing else to complain. The location is about a 20 mins walk to Chelsea Market and 25 mins walk to Grand Central Terminal.
+
+By the way, you have to pay some sort of ‘hotel fee’, which is not included when you book through a third party, and it’s actually pretty expensive like USD 20-30 per night, but you get to use all of their mini bar which includes coke, diet coke, orange juice, apple juice, and two bottles of water. There is also a 24 hour gym available to use as well.
+
+Innside by Melia
+Innside by Melia
+This was the lobby. They were playing sort of house music.
+
+Innside by Melia
+Bathroom. The sink didn’t have enough space for my hygiene items.
+
+Innside by Melia
+The Queen size bed.
+
+Innside by Melia
+The desk when I had to work on my laptop.
+
+Penn Station
+Arriving at Penn Station
+
+Restaurants and Eating
+
+Pizzas
+
+You know how some foods you grow up you don’t like as much? I thought that food was pizza.
+
+Then I came back to New York and realize… it wasn’t pizza I disliked. It was pizza in Hong Kong that I disliked. Pizza in Hong Kong is terrible!
+
+But after my friend brought me to one of his favorite pizza joints in NYC, I began craving for pizza literally everyday. So! For 7 of my meals, I ended up eating pizzas. I’ll let you know the good ones and the not so good ones. By the way, out of the 7, this also included the one I had in Lancaster, which was my third favorite slice of pizza.
+
+Measure
+
+Monarch Rooftop Lounge
+
+Two E Project
+
+https://www.thrillist.com/drink/new-york/best-bars-in-manhattan-nyc-neighborhood-guide
+
+Wrap Up
+
+I had such an incredible time in New York. Super fun. I would totally live there for a couple months (the months being not in the Winter of course). There’s just so much to see, so much to do, and so many different kinds of people. It’s essentially like Hong Kong but a reflection of it, with different restaurants to venture, different nightlife scene to accustom to, and cool things to try.
+
+Coming for you again soon New York!
+
+169 bar, 230 fifth rooftop bar, 55th street 7th avenue, abc carpet & home, aldea, allbirds, axel boman, basta pasta, big gay ice cream, carbone new york, charles hanson 169 bar, charlie bird, chelsea market, chicken over rice, eataly nyc flatiron, egg instagrammable place, good room brooklyn, grand central oyster, grand central terminal, hong kong reflection, honor gandhi, if soho, il pesce, innside by melia, innside by melia new york nomad, jfk airport, katya dobryakova, koreatown, le bain at the standard, lego place, lupa osteria romana, manhattan clam chowder, meatpacking district, mr. bing, New York, new york at night, new york city, new york pizza, new york subway, new york vibes, new york vintage, opening ceremony, palace, penn station, penn station pizza, prince street pizza, public hotel, raines law room, scarrs pizza, serafina, shake shack, soho new york, strand bookstore, supreme new york, the halal guys, the skylark, the standard, top of the standard, waldys pizza, walking around new york city, washington square park, westhouse hotel, westhouse hotel new york
+
+ https://outline.com/tcrN8e} 00040029476<b>2021-04-27</b> 20:21:36 {https://v.qq.com/x/cover/mzc00200kqecmvk.html} 00041000086<b>2021-04-27</b> 20:38:27 {这是你IP：36.17.239.251 } 00042000069<b>2021-04-27</b> 23:43:35 {https://api.sigujx.com/?url=
+https://www.91jxs.com/jiexi/?url=
+https://jiexi.380k.com/?url=
+https://jx.618g.com/?url=
+https://www.xymav.com/?url=} 00043000190<b>2021-04-28</b> 10:11:38 {git config --global http.https://github.com.proxy socks5://127.0.0.1:10808} 00044000115<b>2021-04-28</b> 10:12:35 {git config --global http.https://github.com.proxy
+socks5://127.0.0.1:10808} 00045000116<b>2021-04-28</b> 10:32:34 {<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" x5-video-player-type="web" x5-playsinline="" x-webkit-airplay="allow" poster="/images/play_window_pic.png" preload="metadata" src="blob:https://www.bde4.cc/e5b50fd5-9b21-4311-b17a-b8d324c1498b">
+    
+</video>} 00046000339<b>2021-04-28</b> 10:37:23 {<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" x5-video-player-type="web" x5-playsinline="" x-webkit-airplay="allow" src="blob:https://www.bde4.cc/e5b50fd5-9b21-4311-b17a-b8d324c1498b">
+    
+</video>} 00047000283<b>2021-04-28</b> 10:59:00 {https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php} 00048000104<b>2021-04-28</b> 11:04:51 {https://api.sigujx.com/?url=            [1280×720]          [可以解析会员]         [无弹幕]        [网速快]
+https://www.91jxs.com/jiexi/?url=       [无法解析]
+https://jiexi.380k.com/?url=            [1920×1080]         [可以解析会员]         [有弹幕]        [网速快]
+https://jx.618g.com/?url=               [无法查看，不清楚]   [可以解析会员]         [无弹幕]        [网速卡]
+https://www.xymav.com/?url=             [无法查看，很清楚]   [可以解析会员]         [无弹幕]        [网速卡]} 00049000599<b>2021-04-28</b> 11:21:11 {鼠标跟随特效：https://blog.csdn.net/qq_41829380/article/details/110408740
+效果：https://jx.618g.com/} 00050000152<b>2021-04-28</b> 14:31:57 {https://resoumen.com/v/} 00051000064<b>2021-04-28</b> 14:39:24 {https://www.bde4.cc/play/12024-150.htm} 00052000079<b>2021-04-28</b> 14:39:45 {https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php} 00053000104<b>2021-04-28</b> 16:18:05 {mvn archetype:generate -DinteractiveMode=false -DgroupId=com.oa -DartifactId=zuul-router -Dversion=1.0.0-SNAPSHOT -Dpackage=xxx} 00054000168<b>2021-04-28</b> 16:19:59 {mvn archetype:generate -DinteractiveMode=false -DgroupId=cn.qixqi.pan -DartifactId=authentication-service -Dversion=1.0-SNAPSHOT -Dpackage=jar} 00055000183<b>2021-04-28</b> 16:21:58 {mvn archetype:generate -DinteractiveMode=false -DgroupId=cn.qixqi.pan -DartifactId=authentication-service -Dversion=1.0.0-SNAPSHOT -Dpackage=jar} 00056000185<b>2021-04-29</b> 10:51:15 {docker run -itd --name mongo -p 27017:27017 mongo --auth --restart=always -d} 00057000117<b>2021-04-29</b> 11:01:48 {docker run -itd --name mongo --restart=always -p 27017:27017 mongo --auth} 00058000114<b>2021-04-29</b> 11:22:23 {db.createUser({ user:'admin',pwd:'*1*2*1*4',roles:[ { role:'userAdminAnyDatabase', db: 'admin'},"readWriteAnyDatabase"]});
+} 00059000165<b>2021-04-29</b> 14:16:42 {mongodb://user:pass@ping.qixqi.cn:27017/pan?authSource=admin} 00060000101<b>2021-04-30</b> 00:22:28 {owiejfiowfeffefwefwefwweewjijijwiiwejfjweoifioijiweji2eijfijiwejfowjfowffefhjijijiweeijjjj@gmail.com} 00061000141<b>2021-04-30</b> 00:24:18 {owiejfiowfeffefwefwefwweewjijijwiiwejfjweoifioifffffffffffffffffffffffff} 00062000113<b>2021-04-30</b> 00:25:37 {用户名：39
+密码：72
+邮箱：100} 00063000082<b>2021-04-30</b> 17:13:02 {Mysql： 数字和日期均为固定长度的字段} 00064000092
