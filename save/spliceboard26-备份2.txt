@@ -1,11 +1,11 @@
-<b>2021-04-01</b> 22:56:31 {心痛，大家都开始找伴了，一个人挺好，简简单单，轻轻松松，除了有时候兽性大发，孤身一人，叩问内心；
-IG今天输了，好久好久，他们都没有赢过一场BO5了，为他们心痛，这样也好，退圈，也没有什么值得留念的了，这一路的陪伴，有意气风发，也有颓靡，有滋有味，不过，IG变了，我也变了，大家都变了，爱恨已逝，一段经历，一段狂热，陪伴自己无所适从、寂寥的时光，从中汲取力量和黑暗，但是，人终究会长大，不是吗？可能疼痛会成长的更快，可自己也不能一直把自己的情绪与动力放在别人身上，情绪动力都应该产于自身。别了，shy哥、宁王、义进哥、jackeylove、宝蓝，还有duke，你们是最好的几个人，因为种种，不得不分开，那段日子你们应该都很怀念把！真的是时候说再见了，还望以后你们更顺利啊，能赢BO5啊，以后的人生之路也很顺啊！！！} 00001001057<b>2021-04-02</b> 13:20:33 {既然迟早要分别，那就祝大家前途似锦啊！} 00002000098<b>2021-04-03</b> 13:38:25 {123} 00003000044<b>2021-04-05</b> 01:31:17 {kdevtmpfsi} 00004000051<b>2021-04-08</b> 15:35:22 {alert('1');} 00005000052<b>2021-04-08</b> 15:36:23 {<script>alert(1)</script>} 00006000066<b>2021-04-09</b> 01:15:52 {斗罗大陆115} 00007000056<b>2021-04-09</b> 10:05:24 {Aa15632897935} 00008000054<b>2021-04-09</b> 10:14:48 {https://www.cnblogs.com/stulzq/p/9286878.html} 00009000086<b>2021-04-09</b> 12:49:48 {ok,已经解决，全部换了最新版本，然后换了一个虚拟机。编译成功了了
+<b>2021-05-08</b> 10:46:59 {心痛，大家都开始找伴了，一个人挺好，简简单单，轻轻松松，除了有时候兽性大发，孤身一人，叩问内心；
+IG今天输了，好久好久，他们都没有赢过一场BO5了，为他们心痛，这样也好，退圈，也没有什么值得留念的了，这一路的陪伴，有意气风发，也有颓靡，有滋有味，不过，IG变了，我也变了，大家都变了，爱恨已逝，一段经历，一段狂热，陪伴自己无所适从、寂寥的时光，从中汲取力量和黑暗，但是，人终究会长大，不是吗？可能疼痛会成长的更快，可自己也不能一直把自己的情绪与动力放在别人身上，情绪动力都应该产于自身。别了，shy哥、宁王、义进哥、jackeylove、宝蓝，还有duke，你们是最好的几个人，因为种种，不得不分开，那段日子你们应该都很怀念把！真的是时候说再见了，还望以后你们更顺利啊，能赢BO5啊，以后的人生之路也很顺啊！！！} 00001001057<b>2021-05-08</b> 10:47:22 {既然迟早要分别，那就祝大家前途似锦啊！} 00002000098<b>2021-05-08</b> 10:50:57 {123} 00003000044<b>2021-05-08</b> 10:51:09 {kdevtmpfsi} 00004000051<b>2021-05-08</b> 10:51:27 {alert('1');} 00005000052<b>2021-05-08</b> 10:51:48 {<script>alert(1)</script>} 00006000066<b>2021-05-08</b> 10:52:08 {斗罗大陆115} 00007000056<b>2021-05-08</b> 10:52:24 {Aa15632897935} 00008000054<b>2021-05-08</b> 10:52:41 {https://www.cnblogs.com/stulzq/p/9286878.html} 00009000086<b>2021-05-08</b> 10:52:58 {ok,已经解决，全部换了最新版本，然后换了一个虚拟机。编译成功了了
 具体
 Ubuntu 18.04
 libfastcommon-1.0.43.tar.gz
 fastdfs-6.06.tar.gz
 nginx-1.16.1.tar.gz
-fastdfs-nginx-module-1.22.tar.gz} 00010000261<b>2021-04-09</b> 15:01:54 {mvn install:install-file -DgroupId=org.csource -DartifactId=fastdfs-client-java -Dversion=1.28 -Dpackaging=jar -Dfile=target\fastdfs-client-java-1.28-SNAPSHOT.jar} 00011000203<b>2021-04-10</b> 13:55:48 {http://ali.qixqi.cn:8888/group1/M00/00/00/1EBEO2BxPcOAasQVAAB5ViK6ma4554.jpg} 00012000117<b>2021-04-11</b> 23:41:20 {<img src="https://image/body.jpg" />} 00013000077<b>2021-04-11</b> 23:41:56 {<img src="https://qixqi.cn/image/body.jpg" />} 00014000086<b>2021-04-11</b> 23:43:21 {152 人赞同了该回答
+fastdfs-nginx-module-1.22.tar.gz} 00010000261<b>2021-05-08</b> 10:53:18 {mvn install:install-file -DgroupId=org.csource -DartifactId=fastdfs-client-java -Dversion=1.28 -Dpackaging=jar -Dfile=target\fastdfs-client-java-1.28-SNAPSHOT.jar} 00011000203<b>2021-05-08</b> 10:54:03 {http://ali.qixqi.cn:8888/group1/M00/00/00/1EBEO2BxPcOAasQVAAB5ViK6ma4554.jpg} 00012000117<b>2021-05-08</b> 10:54:26 {<img src="https://image/body.jpg" />} 00013000077<b>2021-05-08</b> 10:54:43 {<img src="https://qixqi.cn/image/body.jpg" />} 00014000086<b>2021-05-08</b> 10:55:29 {152 人赞同了该回答
 哈哈，大家打了好多有意思的比方，不过好像没有看到用实际案例进行解释的，我补充一个吧~
 
 不得不说，分布式和集群都是为了解决两个问题：
@@ -72,7 +72,7 @@ memcached is a high-performance, distributed memory object caching system
 
 OrderService、UserService和GoodService共同完成了下单这件事，这才是分布式（Distribution），而Memcached集群最多只能算是“分布的”（Distributed）。
 
-以上，希望对你有所帮助。} 00015005695<b>2021-04-12</b> 19:44:15 {# import torch
+以上，希望对你有所帮助。} 00015005695<b>2021-05-08</b> 10:56:27 {# import torch
 # import numpy as np
 # poses_2d = np.array([[483.0,450],[503, 450],[503, 539],[496, 622],[469, 546], [462, 546.],[469, 622],[483, 347],
 #                      [483, 326],[489, 264],[448, 347],[448, 408],[441, 463],[517, 347],[524, 408],[538, 463]])
@@ -267,8 +267,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()} 00016008049<b>2021-04-13</b> 10:51:18 {https://shiyangyu.com/uefi-refind-boot/} 00017000080<b>2021-04-13</b> 11:28:46 {https://shiyangyu.com/uefi-refind-boot/} 00018000080<b>2021-04-15</b> 19:46:47 {机器学习，深度学习，忘掉再来} 00019000083<b>2021-04-17</b> 22:36:59 {https://www.cnblogs.com/qinguoyi/p/12355516.html} 00020000089<b>2021-04-19</b> 23:02:17 {docker pull mysql:8.0.23} 00021000065<b>2021-04-19</b> 23:32:18 {docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1214 --restart=always -v /pan/mysql/conf.d:/etc/mysql/conf.d -v /pan/mysql/my.cnf:/etc/mysql/my.cnf -v /pan/mysql/data:/var/lib/mysql -d mysql:latest} 00022000251<b>2021-04-19</b> 23:54:38 { docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1214 --restart=always -v /pan/mysql/conf.d:/etc/mysql/conf.d -v /pan/mysql/my.cnf:/etc/mysql/my.cnf -v /pan/mysql/data:/var/lib/mysql -v /pan/mysql/mysql-files:/var/lib/mysql-files/ -d mysql:latest} 00023000300<b>2021-04-20</b> 00:22:16 { mysql -h 127.0.0.1 -P 3306 -uroot -p} 00024000078<b>2021-04-20</b> 11:43:13 {564
-} 00025000046<b>2021-04-22</b> 15:27:48 {https://www.jianshu.com/p/bdbc00e647db} 00026000079<b>2021-04-23</b> 22:36:21 {<iframe width="950" height="534" src="https://www.youtube.com/embed/YgxHnxh4Lyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>} 00027000289<b>2021-04-24</b> 10:39:40 {package com.vector;
+    main()} 00016008049<b>2021-05-08</b> 10:57:08 {https://shiyangyu.com/uefi-refind-boot/} 00017000080<b>2021-05-08</b> 10:57:35 {https://shiyangyu.com/uefi-refind-boot/} 00018000080<b>2021-05-08</b> 10:57:49 {机器学习，深度学习，忘掉再来} 00019000083<b>2021-05-08</b> 10:58:01 {https://www.cnblogs.com/qinguoyi/p/12355516.html} 00020000089<b>2021-05-08</b> 10:58:14 {docker pull mysql:8.0.23} 00021000065<b>2021-05-08</b> 10:58:27 {docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1214 --restart=always -v /pan/mysql/conf.d:/etc/mysql/conf.d -v /pan/mysql/my.cnf:/etc/mysql/my.cnf -v /pan/mysql/data:/var/lib/mysql -d mysql:latest} 00022000251<b>2021-05-08</b> 10:58:44 { docker run --name mysql8 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1214 --restart=always -v /pan/mysql/conf.d:/etc/mysql/conf.d -v /pan/mysql/my.cnf:/etc/mysql/my.cnf -v /pan/mysql/data:/var/lib/mysql -v /pan/mysql/mysql-files:/var/lib/mysql-files/ -d mysql:latest} 00023000300<b>2021-05-08</b> 10:58:59 { mysql -h 127.0.0.1 -P 3306 -uroot -p} 00024000078<b>2021-05-08</b> 10:59:18 {564
+} 00025000046<b>2021-05-08</b> 10:59:31 {https://www.jianshu.com/p/bdbc00e647db} 00026000079<b>2021-05-08</b> 10:59:46 {<iframe width="950" height="534" src="https://www.youtube.com/embed/YgxHnxh4Lyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>} 00027000289<b>2021-05-08</b> 11:00:07 {package com.vector;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -308,28 +308,28 @@ public class Main {
         }
     }
 }
-} 00028001427<b>2021-04-24</b> 21:28:24 {<!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
+} 00028001427<b>2021-05-08</b> 11:00:21 {<!-- https://mvnrepository.com/artifact/javax.websocket/javax.websocket-api -->
 <dependency>
     <groupId>javax.websocket</groupId>
     <artifactId>javax.websocket-api</artifactId>
     <version>1.1</version>
     <scope>provided</scope>
 </dependency>
-} 00029000298<b>2021-04-24</b> 23:39:17 {1: wujie.qixqi.cn
+} 00029000298<b>2021-05-08</b> 11:00:36 {1: wujie.qixqi.cn
 2. qixqi.cn
 3. baidu.qixqi.cn
 4. shimengya.qixqi.cn
 5. ali.qixqi.cn
 6. ping.qixqi.cn
-7. ali2.qixqi.cn} 00030000166<b>2021-04-24</b> 23:43:52 { Version:           20.10.6
- API version:       1.41} 00031000094<b>2021-04-25</b> 13:08:40 {1: wujie.qixqi.cn
+7. ali2.qixqi.cn} 00030000166<b>2021-05-08</b> 11:01:03 { Version:           20.10.6
+ API version:       1.41} 00031000094<b>2021-05-08</b> 11:01:17 {1: wujie.qixqi.cn
 2. qixqi.cn
 3. baidu.qixqi.cn
 4. shimengya.qixqi.cn
 5. ali.qixqi.cn
 6. ping.qixqi.cn        Aa15632897935
 7. ali3.qixqi.cn        (wujie)
-8. ali4.qixqi.cn        ycx} 00032000231<b>2021-04-25</b> 18:38:32 {丑数
+8. ali4.qixqi.cn        ycx} 00032000231<b>2021-05-08</b> 11:01:29 {丑数
 BFC
 盒子模型
 实现水平布局有啥方法
@@ -347,25 +347,25 @@ setInterval（）
 你最近学的比较难的
 
 let x=x
-var x=x} 00033000424<b>2021-04-26</b> 16:38:30 {git config --global http.sslVerify "false"} 00034000083<b>2021-04-26</b> 16:55:22 {github 提交失败：https://www.cnblogs.com/xym4869/p/13284364.html} 00035000110<b>2021-04-26</b> 20:15:19 {https://shiyangyu.com/uefi-refind-boot/} 00036000080<b>2021-04-26</b> 20:26:48 {cd /boot/EFI/refind/
+var x=x} 00033000424<b>2021-05-08</b> 11:01:41 {git config --global http.sslVerify "false"} 00034000083<b>2021-05-08</b> 11:01:52 {github 提交失败：https://www.cnblogs.com/xym4869/p/13284364.html} 00035000110<b>2021-05-08</b> 11:02:04 {https://shiyangyu.com/uefi-refind-boot/} 00036000080<b>2021-05-08</b> 11:02:16 {cd /boot/EFI/refind/
 mkdir -p themes
 git clone https://github.com/EvanPurkhiser/rEFInd-minimal themes/rEFInd-minimal
 echo "include themes/refind-minimal/theme.conf" >> refind.conf
-systemctl reboot} 00037000241<b>2021-04-27</b> 12:23:36 {$$$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} 00038000084<b>2021-04-27</b> 17:25:29 {测试将 nginx, php-fpm 统一到用户 qixqi:qixqi} 00039000093<b>2021-04-27</b> 19:49:48 {狗东西} 00040000050<b>2021-04-27</b> 20:21:36 {https://v.qq.com/x/cover/mzc00200kqecmvk.html} 00041000086<b>2021-04-27</b> 20:38:27 {这是你IP：36.17.239.251 } 00042000069<b>2021-04-27</b> 23:43:35 {https://api.sigujx.com/?url=
+systemctl reboot} 00037000241<b>2021-05-08</b> 11:02:27 {$$$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} 00038000084<b>2021-05-08</b> 11:02:38 {测试将 nginx, php-fpm 统一到用户 qixqi:qixqi} 00039000093<b>2021-05-08</b> 11:02:56 {狗东西} 00040000050<b>2021-05-08</b> 11:03:09 {https://v.qq.com/x/cover/mzc00200kqecmvk.html} 00041000086<b>2021-05-08</b> 11:03:24 {这是你IP：36.17.239.251 } 00042000069<b>2021-05-08</b> 11:03:36 {https://api.sigujx.com/?url=
 https://www.91jxs.com/jiexi/?url=
 https://jiexi.380k.com/?url=
 https://jx.618g.com/?url=
-https://www.xymav.com/?url=} 00043000190<b>2021-04-28</b> 10:11:38 {git config --global http.https://github.com.proxy socks5://127.0.0.1:10808} 00044000115<b>2021-04-28</b> 10:12:35 {git config --global http.https://github.com.proxy
-socks5://127.0.0.1:10808} 00045000116<b>2021-04-28</b> 10:32:34 {<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" x5-video-player-type="web" x5-playsinline="" x-webkit-airplay="allow" poster="/images/play_window_pic.png" preload="metadata" src="blob:https://www.bde4.cc/e5b50fd5-9b21-4311-b17a-b8d324c1498b">
+https://www.xymav.com/?url=} 00043000190<b>2021-05-08</b> 11:04:25 {git config --global http.https://github.com.proxy socks5://127.0.0.1:10808} 00044000115<b>2021-05-08</b> 11:04:37 {git config --global http.https://github.com.proxy
+socks5://127.0.0.1:10808} 00045000116<b>2021-05-08</b> 11:04:47 {<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" x5-video-player-type="web" x5-playsinline="" x-webkit-airplay="allow" poster="/images/play_window_pic.png" preload="metadata" src="blob:https://www.bde4.cc/e5b50fd5-9b21-4311-b17a-b8d324c1498b">
     
-</video>} 00046000339<b>2021-04-28</b> 10:37:23 {<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" x5-video-player-type="web" x5-playsinline="" x-webkit-airplay="allow" src="blob:https://www.bde4.cc/e5b50fd5-9b21-4311-b17a-b8d324c1498b">
+</video>} 00046000339<b>2021-05-08</b> 11:05:01 {<video class="dplayer-video dplayer-video-current" webkit-playsinline="" playsinline="" x5-video-player-type="web" x5-playsinline="" x-webkit-airplay="allow" src="blob:https://www.bde4.cc/e5b50fd5-9b21-4311-b17a-b8d324c1498b">
     
-</video>} 00047000283<b>2021-04-28</b> 10:59:00 {https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php} 00048000104<b>2021-04-28</b> 11:04:51 {https://api.sigujx.com/?url=            [1280×720]          [可以解析会员]         [无弹幕]        [网速快]
+</video>} 00047000283<b>2021-05-08</b> 11:05:13 {https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php} 00048000104<b>2021-05-08</b> 11:05:26 {https://api.sigujx.com/?url=            [1280×720]          [可以解析会员]         [无弹幕]        [网速快]
 https://www.91jxs.com/jiexi/?url=       [无法解析]
 https://jiexi.380k.com/?url=            [1920×1080]         [可以解析会员]         [有弹幕]        [网速快]
 https://jx.618g.com/?url=               [无法查看，不清楚]   [可以解析会员]         [无弹幕]        [网速卡]
-https://www.xymav.com/?url=             [无法查看，很清楚]   [可以解析会员]         [无弹幕]        [网速卡]} 00049000599<b>2021-04-28</b> 11:21:11 {鼠标跟随特效：https://blog.csdn.net/qq_41829380/article/details/110408740
-效果：https://jx.618g.com/} 00050000152<b>2021-04-28</b> 14:31:57 {https://resoumen.com/v/} 00051000064<b>2021-04-28</b> 14:39:24 {https://www.bde4.cc/play/12024-150.htm} 00052000079<b>2021-04-28</b> 14:39:45 {https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php} 00053000104<b>2021-04-28</b> 16:18:05 {mvn archetype:generate -DinteractiveMode=false -DgroupId=com.oa -DartifactId=zuul-router -Dversion=1.0.0-SNAPSHOT -Dpackage=xxx} 00054000168<b>2021-04-28</b> 16:19:59 {mvn archetype:generate -DinteractiveMode=false -DgroupId=cn.qixqi.pan -DartifactId=authentication-service -Dversion=1.0-SNAPSHOT -Dpackage=jar} 00055000183<b>2021-04-28</b> 16:21:58 {mvn archetype:generate -DinteractiveMode=false -DgroupId=cn.qixqi.pan -DartifactId=authentication-service -Dversion=1.0.0-SNAPSHOT -Dpackage=jar} 00056000185<b>2021-04-29</b> 10:51:15 {docker run -itd --name mongo -p 27017:27017 mongo --auth --restart=always -d} 00057000117<b>2021-04-29</b> 11:01:48 {docker run -itd --name mongo --restart=always -p 27017:27017 mongo --auth} 00058000114<b>2021-04-29</b> 11:22:23 {db.createUser({ user:'admin',pwd:'*1*2*1*4',roles:[ { role:'userAdminAnyDatabase', db: 'admin'},"readWriteAnyDatabase"]});
-} 00059000165<b>2021-04-29</b> 14:16:42 {mongodb://user:pass@ping.qixqi.cn:27017/pan?authSource=admin} 00060000101<b>2021-04-30</b> 00:22:28 {owiejfiowfeffefwefwefwweewjijijwiiwejfjweoifioijiweji2eijfijiwejfowjfowffefhjijijiweeijjjj@gmail.com} 00061000141<b>2021-04-30</b> 00:24:18 {owiejfiowfeffefwefwefwweewjijijwiiwejfjweoifioifffffffffffffffffffffffff} 00062000113<b>2021-04-30</b> 00:25:37 {用户名：39
+https://www.xymav.com/?url=             [无法查看，很清楚]   [可以解析会员]         [无弹幕]        [网速卡]} 00049000599<b>2021-05-08</b> 11:05:38 {鼠标跟随特效：https://blog.csdn.net/qq_41829380/article/details/110408740
+效果：https://jx.618g.com/} 00050000152<b>2021-05-08</b> 11:05:50 {https://resoumen.com/v/} 00051000064<b>2021-05-08</b> 11:06:01 {https://www.bde4.cc/play/12024-150.htm} 00052000079<b>2021-05-08</b> 11:06:12 {https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php} 00053000104<b>2021-05-08</b> 11:06:23 {mvn archetype:generate -DinteractiveMode=false -DgroupId=com.oa -DartifactId=zuul-router -Dversion=1.0.0-SNAPSHOT -Dpackage=xxx} 00054000168<b>2021-05-08</b> 11:06:34 {mvn archetype:generate -DinteractiveMode=false -DgroupId=cn.qixqi.pan -DartifactId=authentication-service -Dversion=1.0-SNAPSHOT -Dpackage=jar} 00055000183<b>2021-05-08</b> 11:06:45 {mvn archetype:generate -DinteractiveMode=false -DgroupId=cn.qixqi.pan -DartifactId=authentication-service -Dversion=1.0.0-SNAPSHOT -Dpackage=jar} 00056000185<b>2021-05-08</b> 11:06:58 {docker run -itd --name mongo -p 27017:27017 mongo --auth --restart=always -d} 00057000117<b>2021-05-08</b> 11:07:08 {docker run -itd --name mongo --restart=always -p 27017:27017 mongo --auth} 00058000114<b>2021-05-08</b> 11:07:18 {db.createUser({ user:'admin',pwd:'*1*2*1*4',roles:[ { role:'userAdminAnyDatabase', db: 'admin'},"readWriteAnyDatabase"]});
+} 00059000165<b>2021-05-08</b> 11:07:28 {mongodb://user:pass@ping.qixqi.cn:27017/pan?authSource=admin} 00060000101<b>2021-05-08</b> 11:07:50 {owiejfiowfeffefwefwefwweewjijijwiiwejfjweoifioijiweji2eijfijiwejfowjfowffefhjijijiweeijjjj@gmail.com} 00061000141<b>2021-05-08</b> 11:08:00 {owiejfiowfeffefwefwefwweewjijijwiiwejfjweoifioifffffffffffffffffffffffff} 00062000113<b>2021-05-08</b> 11:08:11 {用户名：39
 密码：72
-邮箱：100} 00063000082<b>2021-04-30</b> 17:13:02 {Mysql： 数字和日期均为固定长度的字段} 00064000092
+邮箱：100} 00063000082<b>2021-05-08</b> 11:08:22 {Mysql： 数字和日期均为固定长度的字段} 00064000092
